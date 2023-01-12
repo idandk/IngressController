@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+  namespace: task
+data:
+  server: |
+    listen=80
+    allow=192.168.56.103
+    deny=all
